@@ -12,7 +12,7 @@ module.exports = {
     contentBase: path.join(__dirname, 'dist'),
     stats: 'errors-only',
     hot: true,
-    host: '0.0.0.0'
+    port: 9000
   },
   module: {
     rules: [
@@ -53,29 +53,29 @@ module.exports = {
         use: isDev
           ? ['style-loader', 'css-loader', 'sass-loader']
           : [
-              MiniCssExtractPlugin.loader,
-              {
-                loader: 'css-loader',
-                options: {
-                  minimize: {
-                    safe: true
-                  }
+            MiniCssExtractPlugin.loader,
+            {
+              loader: 'css-loader',
+              options: {
+                minimize: {
+                  safe: true
                 }
-              },
-              {
-                loader: 'postcss-loader',
-                options: {
-                  autoprefixer: {
-                    browsers: ['last 2 versions']
-                  },
-                  plugins: () => require('autoprefixer')
-                }
-              },
-              {
-                loader: 'sass-loader',
-                options: {}
               }
-            ]
+            },
+            {
+              loader: 'postcss-loader',
+              options: {
+                autoprefixer: {
+                  browsers: ['last 2 versions']
+                },
+                plugins: () => require('autoprefixer')
+              }
+            },
+            {
+              loader: 'sass-loader',
+              options: {}
+            }
+          ]
       }
     ]
   },
