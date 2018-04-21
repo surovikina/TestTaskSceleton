@@ -1,0 +1,20 @@
+.articles__title {
+  padding: 18px 16px;
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: $white;
+  background-color: $base;
+  border-top: 1px solid #8ad4c2;
+}
+.articles__list {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0.8;
+  // background-color: #242a2c;
+}
+.articles__item {
+  width: 50%;
+  height: 160px;
+  overflow: hidden;
+}

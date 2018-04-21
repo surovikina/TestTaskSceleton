@@ -6,7 +6,7 @@ const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
   context: path.resolve(__dirname, './'),
-  entry: ['./src/index.js', './src/styles.scss'],
+  entry: ['./src/js/index.js', './src/scss/styles.scss'],
   devtool: 'inline-source-map',
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

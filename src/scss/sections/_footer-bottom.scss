@@ -1,0 +1,30 @@
+.footer-bottom {
+  border-top: 12px solid #1e2325;
+  background-color: #181c1e;
+  .footer-bottom__nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    .footer-bottom__link {
+      color: #9da5a3;
+      padding: 0 13px;
+      line-height: 30px;
+      @extend %transition;
+      &:hover {
+        color: $base;
+      }
+    }
+  }
+
+  .footer-bottom__copyright {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    line-height: 24px;
+    color: #9da5a3;
+    .footer-bottom__copyright-link{
+      color: #9da5a3;
+    }
+  }
+}

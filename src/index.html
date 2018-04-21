@@ -1,15 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Test Task Sceleton</title>
+  <link href="https://fonts.googleapis.com/css?family=Sintony:400,700" rel="stylesheet">
 </head>
-
 <body>
-  <h1>Hello from Test Task</h1>
+  <header class="page-header">
+    <div class="page-header__logo">
+      <div class="wrapper">
+        <div class="logo">
+          Company logo
+        </div>
+        <div id="burger">
+        </div>
+      </div>
+    </div>
+    <nav class="main-nav">
+      <div id="accordion" class="hidden">
+        <div class="accordion-title">
+          <span>Home</span>
+        </div>
+        <div class="accordion-content">
+        </div>
+        <div class="accordion-title active">
+          <span>Services</span>
+        </div>
+        <div class="accordion-content">
+          <ul class="accordion-content__list">
+            <li class="accordion-content__item">creative work</li>
+            <li class="accordion-content__item">other work</li>
+            <li class="accordion-content__item">art</li>
+          </ul>
+        </div>
+        <div class="accordion-title">
+          <span>Contact</span>
+        </div>
+        <div class="accordion-content">
+          <a href="jacksparrow@com.com">jacksparrow@com.com</a>
+        </div>
+      </div>
+    </nav>
+    <div class="start-info">
+      <div class="wrapper">
+        <div class="start-info__title">
+          Lorem ipsum dolor sit amet consectetur
+        </div>
+        <p class="start-info__messages">
+          Gutful of bottlo no dramas he's got a massive hooroo. Stands out like a ridgy-didge also shazza got us.
+        </p>
+        <p class="start-info__btn-wrapper">
+          <a class="start-info__btn general-btn" href="#">Buy it now</a>
+        </p>
+      </div>
+    </div>
+  </header>
+  <section class="team">
+    <div class="wrapper">
+      <h2 class="team__title">Our Team</h2>
+      <div class="team__list">
+        <div class="team__item">
+          <div class="team__item-bg bg-1">
+          </div>
+          <div class="team__item-description team-one">
+            <h4 class="team__item-title" >Adipiscing elit auris mattis suscipit est</h4>
+            <p class="team__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.  </p>
+            <a class="team__link" href="#">See more...</a>
+          </div>
+        </div>
+        <div class="team__item">
+          <div class="team__item-bg bg-2">
+          </div>
+          <div class="team__item-description team-two">
+            <h4 class="team__item-title">Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+            <p class="team__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.  </p>
+            <a class="team__link" href="#">See more...</a>
+          </div>
+        </div>
+        <div class="team__item ">
+          <div class="team__item-bg bg-3">
+          </div>
+          <div class="team__item-description team-three">
+            <h4 class="team__item-title" >Lorem ipsum dolor sit amet consectetur adipiscing elit</h4>
+            <p class="team__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.  </p>
+            <a class="team__link" href="#">See more...</a>
+          </div>
+        </div>
+        <div class="team__item">
+          <div class="team__item-bg bg-4">
+          </div>
+          <div class="team__item-description team-four">
+            <h4 class="team__item-title">Mauris mattis suscipit est, ut imperdiet tortor Proin sed </h4>
+            <p class="team__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa.  </p>
+            <a class="team__link" href="#">See more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="text">
+    <div class="wrapper">
+      <div class="text__first-section">
+        <div class="text__title">
+          Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris mattis suscipit est, ut imperdiet tortor. Proin sed
+        </div>
+        <p class="text__common-info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio.
+        </p>
+        <p class="text__common-info">
+          Interdum et malesuada fames ac ante ipsum
+          primis in faucibus. Aenean vitae lectus erat.
+          Duis consequat laoreet velit. Mauris convallis,
+          sapien sit amet scelerisque accumsan, felis
+          urna aliquet nunc, viverra mollis odio tellus a
+          nisl. Nulla lobortis lectus non rutrum viverra.
+          Sed et molestie libero. Sed ut ultrices dui.
+        </p>
+      </div>
+      <div class="next__first-section">
+        <div class="text__title">Lorem ipsum dolor sit amet consectetur adipiscing elit Mauris mattis suscipit est, ut imperdiet tortor. Proin sed
+        </div>
+        <p class="text__common-info">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris mattis suscipit est, ut imperdiet tortor. Proin sed molestie massa. Nullam condimentum mauris et rhoncus sagittis. Sed eu metus in diam tincidunt egestas non at odio. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+        </p>
+        <a class="text__btn text__btn-top general-btn" href="#">Button</a>
+        <a class="text__btn text__btn-bottom general-btn" href="#">Button</a>
+      </div>
+    </div>
+  </section>
+  <section class="articles">
+    <h2 class="articles__title">Latest articles</h2>
+    <ul class="articles__list">
+      <li class="articles__item">
+        <picture>
+          <source media="(min-width:640px)" srcset="img/articles/1.jpg">
+          <img src="img/11/1.jpg" alt="">
+        </picture>
+      </li>
+      <li class="articles__item">
+        <picture>
+          <source media="(min-width:640px)" srcset="img/articles/2.jpg">
+          <img src="img/11/2.jpg" alt="">
+        </picture>
+      </li>
+      <li class="articles__item">
+        <picture>
+          <source media="(min-width:640px)" srcset="img/articles/3.jpg">
+          <img src="img/11/3.jpg" alt="">
+        </picture>
+      </li>
+      <li class="articles__item">
+        <picture>
+          <source media="(min-width:640px)" srcset="img/articles/4.jpg">
+          <img src="img/11/4.jpg" alt="">
+        </picture>
+      </li>
+    </ul>
+  </section>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class=" wrapper">
+        <div class="footer-top__text">
+          <div class="footer-top__logo logo">
+            Company Logo
+          </div>
+          <p class="footer-top__text-item">
+            Nam mi enim, auctor non ultricies a, fringilla eu risus. Praesent vitae lorem et elit tincidunt accumsan suscipit eu libero. Maecenas diam est, venenatis vitae dui in, vestibulum mollis arcu. Donec eu nibh tincidunt, dapibus sem eu, aliquam dolor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum consectetur commodo eros, vitae laoreet lectus aliq
+          </p>
+        </div>
+        <form class="footer-top__form contact-us" action="" method="post">
+          <h3 class="contact-us__title">Contact Us</h3>
+          <input class="contact-us__email" type="email" name="" value="" placeholder="My email is ..." required>
+          <textarea class="contact-us__message" name="name" rows="3" cols="30" maxlength="100"  placeholder="This is color for any user text in form (not for “place holder”)" ></textarea>
+          <button class="contact-us__btn general-btn " type="submit">Button</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="wrapper">
+        <ul class="footer-bottom__nav">
+          <li><a class="footer-bottom__link" href="#">List one </a></li>
+          <li><a class="footer-bottom__link" href="#">Page two</a></li>
+          <li><a class="footer-bottom__link" href="#">Design</a></li>
+          <li><a class="footer-bottom__link" href="#">Work</a></li>
+          <li><a class="footer-bottom__link" href="#">Contact me</a></li>
+          <li><a class="footer-bottom__link" href="#">About me</a> </li>
+        </ul>
+        <p class="footer-bottom__copyright">The entirety of this site is protected by copyright &#169; 2001–2017<a class="footer-bottom__copyright-link" href="#"> Website.com.</a></p>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>

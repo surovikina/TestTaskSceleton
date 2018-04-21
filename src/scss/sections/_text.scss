@@ -1,0 +1,39 @@
+.text {
+  background-color: #f7f7f7;
+  padding-bottom: 30px;
+}
+
+.text__title {
+  width: 82%;
+  padding-top: 28px;
+  font-family: $helvetica-neue;
+  font-size: 18px;
+  line-height: 24px;
+  color: #616870;
+}
+
+.text__common-info {
+  padding-top: 18px;
+  font-family: $helvetica-neue;
+  font-size: 14px;
+  line-height: 26px;
+  color: #737d84;
+}
+
+.text__btn {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  border-radius: 2px;
+  font-family: 'Sintony', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.text__btn-top {
+  background-color: $base;
+}
+
+.text__btn-bottom {
+  background-color: #455357;
+}
