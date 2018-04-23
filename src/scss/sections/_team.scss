@@ -14,13 +14,16 @@
 
 .team__item {
   width: 100%;
-  max-width: 350px;
   min-height: 325px;
   margin-bottom: 30px;
   border: 5px solid transparent;
   @extend %transition;
   &:hover {
     border: 5px solid $base;
+  }
+  &:hover .team__item-description{
+    border-left: 1px solid transparent;
+    border-left: 1px solid transparent;
   }
 }
 

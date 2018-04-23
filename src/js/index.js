@@ -28,10 +28,10 @@ window.addEventListener('resize', loadImages);
 var title = document.getElementsByClassName('accordion-title'),
   content = document.getElementsByClassName('accordion-content');
 
-  for (var i = 0; i < title.length; i++) {
+  for (let i = 0; i < title.length; i++) {
     title[i].addEventListener('click', function(){
       if (!(this.classList.contains('active'))) {
-        for (var i = 0; i < title.length; i++) {
+        for (let i = 0; i < title.length; i++) {
           title[i].classList.remove('active');
         }
         this.classList.add('active');
