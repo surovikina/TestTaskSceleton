@@ -33,9 +33,7 @@ body {
 }
 
 .wrapper {
-  // max-width: 500px;
-  width: auto;
-  margin: 0 auto;
+  width: 100%;
   padding: 0 16px;
 }
 
@@ -47,15 +45,27 @@ body {
   font-family: 'Sintony', sans-serif;
   font-weight: bold;
   padding: 16px 0;
+  cursor: pointer;
   &:hover,
   &:active {
     text-decoration: none;
   }
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.general-btn--green {
+  color: $white;
+  background-color: $base;
+  &:hover {
+    background-color: darken($base, 15%);
+  }
+}
+
+.general-btn--gray {
+  color: $white;
+  background-color: #455357;
+  &:hover {
+    background-color: darken(#455357, 15%);
+  }
 }
 
 .hidden {
@@ -66,12 +76,8 @@ img {
   transition: all .3s ease-in;
 }
 
-// input { // clear input appearance
-//   -webkit-appearance: none;
-//   -moz-appearance: none;
-// }
+// img {
+//   max-width: 100%;
+//   height: auto;
 //
-// input::-ms-clear,
-// input::-ms-reveal { // clear input appearance
-//   display: none;
 // }

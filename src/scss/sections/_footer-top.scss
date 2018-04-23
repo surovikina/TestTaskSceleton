@@ -1,49 +1,69 @@
 .footer-top {
   background-color: #242a2c;
   color: #9da5a3;
-  .footer-top__text {
-    padding-top: 20px;
-    .footer-top__logo {
-      font-size: 20px;
-      line-height: 36px;
-    }
-    .footer-top__text-item {
-      font-size: 14px;
-      line-height: 24px;
-    }
+}
+
+.footer-top__text {
+  padding-top: 20px;
+}
+
+.footer-top__logo {
+  color: #9da5a3;
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.footer-top__text-item {
+  font-size: 14px;
+  line-height: 24px;
+}
+.footer-top__text-item:nth-child(3) {
+  display: none;
+}
+
+.contact-us {
+  padding: 29px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us__title {
+  font-size: 20px;
+  line-height: 36px;
+  margin-bottom: 8px;
+  font-weight: normal;
+}
+
+.contact-us__email {
+  width: 100%;
+  margin-top: 14px;
+  padding: 16px 18px;
+  border-radius: 2px;
+  border: 2px solid transparent;
+  background-color: #181c1d;
+  color: #9da5a3;
+  line-height: 24px;
+  &:focus {
+    border: 2px solid #323a3d;
   }
-  
-  .contact-us {
-    padding:   29px 0;
-    display: flex;
-    flex-direction: column;
-    .contact-us__title {
-      font-size: 20px;
-      margin-bottom: 8px;
-      font-weight: normal;
-    }
-    .contact-us__email {
-      width: 100%;
-      margin-top: 14px;
-      padding: 16px 18px;
-      border-radius: 2px;
-      background-color: #181c1d;
-      color: #9da5a3;
-      line-height: 24px;
-    }
-    .contact-us__message {
-      margin-top: 14px;
-      padding: 16px 18px;
-      border-radius: 2px;
-      background-color: #181c1d;
-      color: #9da5a3;
-      resize: none;
-    }
-    .contact-us__btn {
-      margin-top: 14px;
-      border-radius: 3px;
-      color: $white;
-      background-color: $base;
-    }
+}
+
+.contact-us__message {
+  margin-top: 14px;
+  padding: 16px 18px;
+  border-radius: 2px;
+  background-color: #181c1d;
+  color: #9da5a3;
+  resize: none;
+  border: 2px solid transparent;
+  &:focus {
+    border: 2px solid #323a3d;
   }
+}
+
+.contact-us__btn {
+  margin-top: 14px;
+  border-radius: 3px;
 }

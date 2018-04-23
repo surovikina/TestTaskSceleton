@@ -1,3 +1,30 @@
+(function(){
+
+var loadImages = function () {
+    var imageList = document.getElementsByClassName('articles-img');
+    var mobileImageList = document.getElementsByClassName('articles-img--mobile');
+  if (window.innerWidth < 450) {
+
+    [].forEach.call(imageList, function (el) {
+      el.style.display = 'none';
+    });
+
+    [].forEach.call(mobileImageList, function (el) {
+      el.style.display = 'block';
+    });
+  } else {
+    [].forEach.call(imageList, function (el) {
+      el.style.display = 'block';
+    });
+    [].forEach.call(mobileImageList, function (el) {
+      el.style.display = 'none';
+    });
+  }
+};
+
+document.addEventListener('DOMContentLoaded', loadImages);
+window.addEventListener('resize', loadImages);
+
 var title = document.getElementsByClassName('accordion-title'),
   content = document.getElementsByClassName('accordion-content');
 
@@ -22,3 +49,5 @@ var title = document.getElementsByClassName('accordion-title'),
   };
 
   mobMenu.addEventListener('click', mobMenuClickHandler);
+
+}());

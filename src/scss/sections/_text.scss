@@ -5,7 +5,7 @@
 
 .text__title {
   width: 82%;
-  padding-top: 28px;
+  padding-top: 27px;
   font-family: $helvetica-neue;
   font-size: 18px;
   line-height: 24px;
@@ -13,7 +13,7 @@
 }
 
 .text__common-info {
-  padding-top: 18px;
+  padding-top: 15px;
   font-family: $helvetica-neue;
   font-size: 14px;
   line-height: 26px;
@@ -24,16 +24,8 @@
   display: block;
   margin-top: 20px;
   text-align: center;
-  border-radius: 2px;
   font-family: 'Sintony', sans-serif;
   font-weight: bold;
   color: #ffffff;
-}
-
-.text__btn-top {
-  background-color: $base;
-}
-
-.text__btn-bottom {
-  background-color: #455357;
+  border-radius: 2px;
 }

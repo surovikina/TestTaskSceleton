@@ -1,53 +1,63 @@
 .team {
-  padding-top: 30px;
   background-color: #fcfcfc;
   border-bottom: 1px solid #e3e3e3;
-  .team__title {
-    font-size: 20px;
-    font-weight: normal;
-    color: $base;
-    text-transform: uppercase;
-  }
+}
 
-  .team__list {
-    margin-top: 17px;
-    .team__item {
-      margin-bottom: 30px;
-      min-height: 325px;
-      width: 100%;
-      .team__item-bg {
-        height: 175px;
-        width: auto;
-        overflow: hidden;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-      .team__item-description {
-        position: relative;
-        padding-top: 50px;
-        padding-right: 20px;
-        padding-left: 20px;
-        border-left: 1px solid #dbe1e7;
-        border-right: 1px solid #dbe1e7;
-        .team__item-title {
-          width: 220;
-          font-family: $helvetica-neue;
-          font-weight: normal;
-          color: $grey;
-          font-size: 18px;
-          line-height: 24px;
-        }
-        .team__item-text {
-          display: none;
-        }
-        .team__link {
-          display: block;
-          padding: 20px 0;
-          color: $base;
-        }
-      }
-    }
+.team__title {
+  padding-top: 30px;
+  padding-bottom: 17px;
+  font-size: 20px;
+  font-weight: normal;
+  color: $base;
+  text-transform: uppercase;
+}
+
+.team__item {
+  width: 100%;
+  max-width: 350px;
+  min-height: 325px;
+  margin-bottom: 30px;
+  border: 5px solid transparent;
+  @extend %transition;
+  &:hover {
+    border: 5px solid $base;
   }
+}
+
+.team__item-bg {
+  height: 175px;
+  width: auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.team__item-description {
+  position: relative;
+  padding-top: 48px;
+  padding-right: 14px;
+  padding-left: 14px;
+  border-left: 1px solid #dbe1e7;
+  border-right: 1px solid #dbe1e7;
+}
+
+.team__item-title {
+  font-size: 18px;
+  line-height: 24px;
+  font-family: $helvetica-neue;
+  font-weight: normal;
+  color: $grey;
+}
+
+.team__item-text {
+  display: none;
+}
+
+.team__link {
+  display: block;
+  padding: 20px 0;
+  font-family: $helvetica-neue;
+  color: $base;
 }
 
 .bg-1 {
@@ -95,3 +105,25 @@
 .team-four::before {
   background-image: url("../img/foto-team/4.jpg");
 }
+// @media all and (min-width: $tablet-width) {
+//
+// .team__title {
+//   padding-top: 59px;
+//   font-size: 24px;
+// }
+//
+// .team__list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+// }
+//
+// .team__item {
+//   min-width: 280px;
+//   width: 23%;
+// }
+//
+// .team__item-text {
+//   display: block;
+// }
+// }
